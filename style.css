@@ -1,0 +1,110 @@
+body{
+    background: url(https://wallpapercave.com/wp/wp4464860.jpg);
+    background-size: cover;
+}
+
+::selection{
+    background: rgb(251, 123, 145);
+    color: #fff;
+}
+
+.clock{
+    height: 250px;
+    width: 250px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.full-clock{
+    margin-left: 40%;
+    margin-top: 70px;
+}
+
+
+.hand{
+    border-bottom: 3px solid #fff;
+    width: 90px;
+}
+
+.sec-hand{
+    position: relative;
+    transform: rotate(90deg);
+    top: -20px;
+    left: 30px;
+    transition: all .05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    transform-origin: 100%;
+ }
+
+.min-hand{
+    margin-top: 40px;
+    transform: rotate(90deg);
+    border-bottom: 3px solid  rgb(255, 255, 255);
+    position: relative;
+    top: -62px;
+    left: 30px;
+    transition: all .05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    transform-origin: 100%;
+ }
+.hour-hand{
+    position: relative;
+    margin-top: 40px;
+    width: 60px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transform: rotate(90deg);
+    top: -105px;
+    left: 60px;
+    transition: all .05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    transform-origin: 100%;
+ }
+
+/* numbers */
+ .twelve{
+    font-family: 'Courier New', Courier, monospace;
+     position: relative;
+     left: 110px;
+     top: -10px;
+     color: rgb(65, 65, 65);
+     font-weight: 1000;
+ }
+
+ .three{
+    font-family: 'Courier New', Courier, monospace;
+     position: relative;
+     top: 70px;
+     left: 10px;
+     color: rgb(65, 65, 65);
+     font-weight: 1000;
+ }
+
+ .six{
+    font-family: 'Courier New', Courier, monospace;
+     position: relative;
+     left: 115px;
+     top: 140px;
+     color: rgb(65, 65, 65);
+     font-weight: 1000;
+ }
+
+ .nine{
+    font-family: 'Courier New', Courier, monospace;
+     position: relative;
+     left: 225px;
+     color: rgb(65, 65, 65);
+     font-weight: 1000;
+  }
+
+
+  /* Displayed test modifications */
+  .display-sec{
+      font-family: 'Courier New', Courier, monospace;
+      color: rgb(65, 65, 65);
+  }
+
+  .time-display{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
